@@ -277,7 +277,7 @@ class Controller extends CoreBase
             return;
         }
         if ($e instanceof SwooleException) {
-            secho("EX", "--------------------------[报错指南]----------------------------" . date("Y-m-d h:i:s"));
+            secho("EX", "--------------------------[报错指南]----------------------------" . date("Y-m-d H:i:s"));
             secho("EX", "异常消息：" . $e->getMessage());
             print_context($this->getContext());
             secho("EX", "--------------------------------------------------------------");
